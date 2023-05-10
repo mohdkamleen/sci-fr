@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: rgb(236, 236, 236);
+}
+
+.logo {
+  margin: 16px;
+  padding: 5px 10px;
+  display: flex;
+  font-weight: 700;
+  color: white;
+  font-family: Merriweather, serif;
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+
+.editable-row .ant-form-item-explain {
+  position: absolute;
+  top: 100%;
+  font-size: 12px;
+}
+
+/* nav item code  */
+.nav-btn{
+  background: white;
+  font-size: 16px;
+  padding: 5px 10px ;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer;
+  transition: .3s;
+}
+
+.nav-btn:hover{
+  box-shadow: 2px 2px 10px rgb(131, 131, 131);
+}
+
+.chart-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+}
+
+.chart-flex .chart {
+  flex: 1;
+  border: 1px solid lightgray;
+  padding: 50px;
+  border-radius: 15px;
+  width: 45%;
+}
+
+.slot-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  background: rgba(233, 97, 97, 0.281);
+}
+
+
+@media (max-width:1000px) {
+  .chart-flex {
+    flex-direction: column;
+  }
+  .chart-flex .chart {
+    width: 100%;
+  }
+}
+  
+@media (max-width:850px) {
+  .footer-section{
+    flex-direction: column;  
+    align-items: center;
+    gap: 20px;
+  }
+  .footer-section div{
+    text-align: center;
+  }
+}
+  
+
+.footer-section {
+  display: flex;
+  justify-content: space-around;
+  max-width: 800px;
+  margin: auto;
+}
+
+.footer-section div {
+  max-width: 300px;
+}
