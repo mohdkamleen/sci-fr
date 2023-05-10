@@ -1,4 +1,8 @@
+import { useNavigate } from "react-router"
+
 export default function () {
+    const navigate = useNavigate()
+
     return (
         <>
             <nav style={{
@@ -22,9 +26,9 @@ export default function () {
 
                 {/* this is manu part  */}
                 <div>
-                    <button className="nav-btn">Home</button>
-                    <button className="nav-btn">Bill</button>
-                    <button className="nav-btn">About</button>
+                    <button className="nav-btn" onClick={() => navigate("/")}>Home</button>
+                    <button className="nav-btn" onClick={() => navigate("/bill")}>Bill</button>
+                    <button className="nav-btn" onClick={() => navigate("/about")}>About</button>
                 </div>
             </nav>
         </>

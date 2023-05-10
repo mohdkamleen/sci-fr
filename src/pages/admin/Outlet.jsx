@@ -1,7 +1,7 @@
-import { BellOutlined, CaretDownOutlined, CarFilled, DatabaseOutlined, FileAddOutlined, FileOutlined, GlobalOutlined, HomeOutlined, LineChartOutlined, LogoutOutlined, ProfileOutlined, TeamOutlined, UserOutlined } from '@ant-design/icons';
+import { BellOutlined, CaretDownOutlined, CarFilled,HomeOutlined, LogoutOutlined,UserOutlined } from '@ant-design/icons';
 import { Avatar, Badge, Layout, Menu, theme } from 'antd';
 import { useState } from 'react';
-import { Outlet, useLocation, useNavigate } from 'react-router-dom';
+import { Outlet,  useNavigate } from 'react-router-dom';
 const { Header, Content, Footer, Sider } = Layout;
 function getItem(label, key, icon, children) {
   return {

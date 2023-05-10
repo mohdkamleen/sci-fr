@@ -12,10 +12,10 @@ function Footer() {
                  </div>
                  <div>
                     <h4>Our Team</h4>
-                    <Link  className='footer-item'>Rashid Ansari (TL)</Link><br />
-                    <Link className='footer-item'>Abusad Ansari</Link><br />
-                    <Link className='footer-item'>Aquib Khan</Link><br />
-                    <Link  className='footer-item'>Mohd Kamleen</Link>
+                    <span  className='footer-item'>Rashid Ansari (TL)</span><br />
+                    <span className='footer-item'>Abusad Ansari</span><br />
+                    <span className='footer-item'>Aquib Khan</span><br />
+                    <span  className='footer-item'>Mohd Kamleen</span>
                  </div> 
                  <div>
                     <h4>Contact Us</h4>
