@@ -51,7 +51,7 @@ export default function () {
           onClick={(e) => navigate(e.key)}
           items={items} />
           
-          <p style={{color:"gray",padding:"10px 30px",cursor:"pointer"}} onClick={handleLogout}><LogoutOutlined /> Logout</p>
+          <p style={{color:"gray",padding:"10px 30px",cursor:"pointer"}} onClick={handleLogout}><LogoutOutlined />&nbsp; {!collapsed ? " Logout " : "" }</p>
       </Sider>
       <Layout className="site-layout">
         <Header
@@ -68,7 +68,7 @@ export default function () {
           </Badge>
 
           <Badge>
-            <Avatar size={30} icon={<UserOutlined />} shape="circle" /> &nbsp; WhiteEagle <CaretDownOutlined style={{ color: "gray" }} />
+            <Avatar size={30} icon={<UserOutlined />} shape="circle" /> &nbsp; WhiteEagle &nbsp; <CaretDownOutlined style={{ color: "gray" }} />
           </Badge>
 
         </Header>

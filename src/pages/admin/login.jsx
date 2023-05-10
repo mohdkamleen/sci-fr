@@ -17,7 +17,7 @@ export default function () {
             <h3>Admin Login </h3> <br />
             User Id :
             <Input onChange={(e) => setid(e.target.value)} placeholder="Enter User Id"/> <br /><br />
-            <Button onClick={handleAdminLogin}>Login</Button>
+            <Button style={{display:"block",margin:"auto"}} onClick={handleAdminLogin}>Login</Button>
         </div>
     )
 }
