@@ -12,7 +12,7 @@ function getItem(label, key, icon, children) {
   };
 }
 const items = [
-  getItem('Home', "/", <HomeOutlined />),
+  getItem('Home', "/admin", <HomeOutlined />),
   getItem('Car', 'car', <CarFilled />),   
 ];
 

@@ -1,6 +1,7 @@
 import { Button, Input, Table } from "antd";
 import axios from "../../axios/index";
 import { useEffect, useState } from "react";
+import moment from "moment";
 
 export default function () {
 
@@ -25,13 +26,13 @@ export default function () {
             title: 'Arrival Time',
             dataIndex: 'arrivedAt',
             key: 'arrivedAt',
-            render : e => new Date(e).toDateString()
+            render : e => moment(e).format('LLLL')
         },
         {
             title: 'Departure Time',
             dataIndex: 'leavedAt',
             key: 'leavedAt',
-            render : e => new Date(e).toDateString()
+            render : e => moment(e).format('LLLL')
         },
         {
             title: 'Duration (min)',
