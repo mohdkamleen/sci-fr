@@ -1,13 +1,14 @@
 
 import axios from "../../axios/index"
 import { useEffect, useState } from "react" 
+import { Skeleton } from "antd"
 
 export default function () {
-    const [slot, setSlot] = useState(null)
+    const [slot, setSlot] = useState(null) 
 
-    useEffect(() => {
+    useEffect(() => { 
         axios.get("/slot").then(res => {
-            setSlot(res.data)
+            setSlot(res.data) 
         })
     }, [])
  
@@ -23,7 +24,7 @@ export default function () {
             margin: "30px auto",
             padding: "0 5%"
         }}>
-            {slot?.length > 0 && slot.map((e, i) => (
+            {slot?.length > 0 ? slot.map((e, i) => (
                 <div key={i} className="slot-div" style={!e.isFull ? {background:"rgba(101, 233, 97, 0.281)"} : {}}>
                     <h3 style={{textTransform:"uppercase"}}>{e.slot}</h3>
                     {
@@ -32,8 +33,12 @@ export default function () {
                         : <big>Open</big>
                     }
                 </div>
-            ))}
-        </div>
+            )) :  <>
+            <Skeleton /><Skeleton />
+            <Skeleton /><Skeleton />
+            <Skeleton /><Skeleton /> 
+            </>}
+        </div> 
         </>
     )
 }

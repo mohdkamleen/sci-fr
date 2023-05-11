@@ -25,11 +25,13 @@ export default function () {
             title: 'Arrival Time',
             dataIndex: 'arrivedAt',
             key: 'arrivedAt',
+            render : e => new Date(e).toDateString()
         },
         {
             title: 'Departure Time',
             dataIndex: 'leavedAt',
             key: 'leavedAt',
+            render : e => new Date(e).toDateString()
         },
         {
             title: 'Duration (min)',
