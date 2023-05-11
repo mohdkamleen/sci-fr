@@ -26,6 +26,11 @@ export default function () {
             render : s => <b>{s.toUpperCase()}</b>
         },
         {
+            title: 'Number',
+            dataIndex: 'v_number',
+            key: 'v_number', 
+        },
+        {
             title: 'Arrival Time',
             dataIndex: 'arrivedAt',
             key: 'arrivedAt',
