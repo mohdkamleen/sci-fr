@@ -15,7 +15,7 @@ function Footer() {
                     <span  className='footer-item'>Wakil Ahmad (TL)</span><br />
                     <span className='footer-item'>Mohd Wazeh</span><br />
                     <span className='footer-item'>Mohd Kamleen</span><br />
-                    <span  className='footer-item'>Abusad Ansari</span>
+                    <span  className='footer-item'>Abusad Ahmad</span>
                  </div> 
                  <div>
                     <h4>Contact Us</h4>
