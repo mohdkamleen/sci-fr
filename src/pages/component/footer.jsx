@@ -12,15 +12,15 @@ function Footer() {
                  </div>
                  <div>
                     <h4>Our Team</h4>
-                    <span  className='footer-item'>Rashid Ansari (TL)</span><br />
-                    <span className='footer-item'>Abusad Ansari</span><br />
-                    <span className='footer-item'>Aquib Khan</span><br />
-                    <span  className='footer-item'>Mohd Kamleen</span>
+                    <span  className='footer-item'>Wakil Ahmad (TL)</span><br />
+                    <span className='footer-item'>Mohd Wazeh</span><br />
+                    <span className='footer-item'>Mohd Kamleen</span><br />
+                    <span  className='footer-item'>Abusad Ansari</span>
                  </div> 
                  <div>
                     <h4>Contact Us</h4>
                     <p style={{wordBreak:"break-word"}}> +91 9838706427 , +91 7309711987 </p>
-                    <p>kamleenmohd@gmail.com</p>
+                    <p>smartcarparking@gmail.com</p>
                     <p>Lucknow University, Lucknow, Uttar Pradesh 226021</p> 
                  </div> 
             </div><br />
