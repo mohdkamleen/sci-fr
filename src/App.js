@@ -9,6 +9,7 @@ import AdminCar from './pages/admin/car';
 import Display from './pages/home/display';
 import About from './pages/home/about';
 import Bill from './pages/home/bill';
+import Index from './pages/home/';
 
 function App() {
 
@@ -18,11 +19,14 @@ function App() {
         <Routes>
 
           {/* this is for use acces urls  */}
-          <Route path="/" element={<Layout />}>
+          {/* <Route path="/" element={<Layout />}>
             <Route path='/' element={<Car />} />
             <Route path='/about' element={<About />} />
             <Route path='/bill' element={<Bill />} />
-          </Route>
+          </Route> */}
+
+
+          <Route path='/' element={<Index />} />
 
           {/* this is use for personal display inside of parking slot  */}
           <Route path='/display' element={<Display />} />

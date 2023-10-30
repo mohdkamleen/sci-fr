@@ -1,4 +1,4 @@
-import { Button, Input, Table } from "antd";
+import { Button, Input, Modal, Select, Table } from "antd";
 import axios from "../../axios/index";
 import { useEffect, useState } from "react";
 import moment from "moment";
@@ -61,9 +61,24 @@ export default function () {
 
     return (
         <>  
-                <div style={{ maxWidth: "700px"}} >
-                    <big>Car Details {data?.length} Result Found </big> <br /><br />
+                <div style={{ maxWidth: "800px"}} > 
+                    <div style={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
+                        <big>Car Details {data?.length} Result Found</big>
+                        <Button type="primary">Add Car</Button>
+                    </div>
                     <Table dataSource={data} columns={columns} loading={loading}/> 
+                    <Modal open={true} closeIcon width={400} okText="Add">
+                       <div style={{display:"flex",justifyContent:"center",gap:"20px"}}>
+                       <Select style={{width:"100px"}} placeholder="Slot">
+                            <option value="s1">S1</option>
+                            <option value="s2">S2</option>
+                            <option value="s3">S3</option>
+                            <option value="s4">S4</option>
+                            <option value="s5">S4</option>
+                        </Select>
+                        <Input placeholder="Car number" />
+                       </div>
+                    </Modal>
                 </div> 
 
         </>
