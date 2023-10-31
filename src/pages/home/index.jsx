@@ -23,6 +23,13 @@ const Index = () => {
     axios.post(`https://adengage-task-bk.onrender.com/api/image/add`, data)
       .then(e => {
         message.success("Success.")
+        setdata({
+          image: "",
+          note: "500",
+          address: "",
+          pincode: ""
+        })
+        setarea([])
       })
       .catch(e => console.log(e))
       .finally(e => setloading(false))
