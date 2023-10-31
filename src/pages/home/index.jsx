@@ -80,7 +80,7 @@ const Index = () => {
       </label><br /><br />
 
       <label>
-        Address : <br /> <Input.TextArea value={data?.address} onChange={e => setloading({ ...data, address: e.target.value })} placeholder='eg. Lucknow IN' type="text" style={{ width: "200px" }} />
+        Address : <br /> <Input.TextArea value={data?.address} onChange={e => setloading({ ...data, address: e.target.value })} placeholder='eg. Lucknow IN' type="text" style={{ width: "300px" }} />
       </label><br /><br />
 
 
